@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', sans-serif; /* Aplicando a fonte Bebas Neue */
     background-color: #f8f9fa;
     color: #333;
 }
@@ -34,26 +34,34 @@ nav {
     list-style: none;
     display: flex;
     gap: 30px;
+    margin-left: -100px; /* Ajuste o valor conforme necessário */
 }
 
 .nav-links li {
     display: inline;
+    align-items: center;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s; /* Suave transição para cor e fundo */
+    border: 2px solid transparent; /* Contorno invisível inicialmente */
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+    padding: 10px 20px; /* Espaçamento interno */
 }
 
 .nav-links a:hover {
-    color: #FFF200;
+    border-color: #000; /* Borda preta ao passar o mouse */
+    background-color: #000; /* Fundo preto ao passar o mouse */
+    color: #FFF200; /* Letras amarelas ao passar o mouse */
 }
+
 
 /* Hero Section */
 .hero {
-    background-image: url('https://i.postimg.cc/15p4NZfx/ea-sports-fc-24-game-4k-1699270735.jpg');
+    background-image: url('https://i.postimg.cc/fyw6S229/ea-sports-fc-24-game-4k-1699270735.jpg');
     background-size: cover;
     background-position: center;
     padding: 450px 20px;
@@ -127,65 +135,64 @@ nav {
 /* Video Section */
 .video-section {
     text-align: center;
-    padding: 50px 0;
-    background-color: #f1f1f1;
-}
-
-.video-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    margin: 50px 0;
 }
 
 .video-container {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
 }
 
 /* Testimonials Section */
 .testimonials {
-    background-color: #101820;
-    color: white;
-    padding: 50px 0;
+    margin: 50px 0;
+    padding: 0 20px;
     text-align: center;
 }
 
 .testimonial-card {
     display: inline-block;
     margin: 20px;
-    background-color: #FFF200;
-    color: black;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
-    max-width: 300px;
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
 .testimonial-card img {
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial-card p {
+    font-style: italic;
 }
 
 /* Footer */
+/* Footer */
 footer {
-    background-color: #0d0d0d; /* Cor de fundo mais escura */
+    background-color: #101820;
     color: white;
-    text-align: center;
-    padding: 20px 0;
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 20px;
+    margin-top: 50px;
 }
 
 
-.socials a {
-    margin: 0 10px;
-}
-
-.socials img {
-    width: 30px;
-}
-
-/* Animations */
+/* Animation */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
+.logo img {
+    width: 80px;
+    background-color: #fff; /* Cor de fundo branco */
+    padding: 10px; /* Ajuste o padding conforme necessário */
+    border-radius: 5px; /* Adiciona bordas arredondadas (opcional) */
+}
