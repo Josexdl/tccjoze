@@ -1,0 +1,162 @@
+/* Fonte estilo FIFA */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+}
+
+body {
+    background-color: #303030; /* Cor de fundo escura */
+    color: #f5f5f5;
+    font-size: 1rem;
+}
+
+header {
+    background-color: #131313; /* Cor do cabeçalho */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+main {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.version-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.fifa-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.fifa-card:hover {
+    transform: translateY(-10px);
+}
+
+.fifa-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.fifa10 {
+    width: 250px; /* Ajuste específico para o FIFA 10 */
+}
+
+.fifa11 {
+    width: 190px; /* Ajuste específico para o FIFA 11 */
+}
+
+.fifa12 {
+    width: 180px; /* Ajuste específico para o FIFA 12 */
+}
+
+.fifa13 {
+    width: 230px; /* Ajuste específico para o FIFA 13 */
+}
+
+.fifa14 {
+    width: 200px; /* Ajuste específico para o FIFA 14 */
+}
+
+.fifa15 {
+    width: 190px; /* Ajuste específico para o FIFA 15 */
+}
+
+.fifa16 {
+    width: 230px; /* Ajuste específico para o FIFA 16 */
+}
+
+.fifa17 {
+    width: 180px; /* Ajuste específico para o FIFA 17 */
+}
+
+.fifa18 {
+    width: 190px; /* Ajuste específico para o FIFA 18 */
+}
+
+.fifa19 {
+    width: 220px; /* Ajuste específico para o FIFA 19 */
+}
+
+.fifa20 {
+    width: 180px; /* Ajuste específico para o FIFA 20 */
+}
+
+.fifa21 {
+    width: 180px; /* Ajuste específico para o FIFA 21 */
+}
+
+.fifa22 {
+    width:200px; /* Ajuste específico para o FIFA 22 */
+}
+
+.fifa23 {
+    width: 200px; /* Ajuste específico para o FIFA 23 */
+}
+
+.eafc24 {
+    width: 170px; /* Ajuste específico para o FIFA 24 */
+}
+/* Defina os ajustes de tamanho de imagem específicos para outras versões aqui */
+
+.fifa-card h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.fifa-card p {
+    font-size: 1rem;
+    color: #dddddd;
+    margin-top: 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #00a9e0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #007b8a;
+}
+
+footer {
+    background-color: #101820;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
