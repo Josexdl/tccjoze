@@ -1,3 +1,4 @@
+/* Reset de estilo */
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    font-family: 'Bebas Neue', sans-serif; /* Aplicando a fonte Bebas Neue */
+    font-family: 'Bebas Neue', sans-serif;
     background-color: #f8f9fa;
     color: #333;
 }
@@ -34,30 +35,28 @@ nav {
     list-style: none;
     display: flex;
     gap: 30px;
-    margin-left: -100px; /* Ajuste o valor conforme necessário */
+    margin-left: -100px;
 }
 
 .nav-links li {
     display: inline;
-    align-items: center;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    transition: color 0.3s, background-color 0.3s; /* Suave transição para cor e fundo */
-    border: 2px solid transparent; /* Contorno invisível inicialmente */
-    border-radius: 5px; /* Bordas arredondadas (opcional) */
-    padding: 10px 20px; /* Espaçamento interno */
+    transition: color 0.3s, background-color 0.3s;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
 }
 
 .nav-links a:hover {
-    border-color: #000; /* Borda preta ao passar o mouse */
-    background-color: #000; /* Fundo preto ao passar o mouse */
-    color: #FFF200; /* Letras amarelas ao passar o mouse */
+    border-color: #000;
+    background-color: #000;
+    color: #FFF200;
 }
-
 
 /* Hero Section */
 .hero {
@@ -170,15 +169,13 @@ nav {
 }
 
 /* Footer */
-/* Footer */
 footer {
     background-color: #101820;
     color: white;
-    text-align: center; /* Centraliza o texto no rodapé */
+    text-align: center;
     padding: 20px;
     margin-top: 50px;
 }
-
 
 /* Animation */
 @keyframes fadeIn {
@@ -192,11 +189,10 @@ footer {
 
 .logo img {
     width: 80px;
-    background-color: #fff; /* Cor de fundo branco */
-    padding: 10px; /* Ajuste o padding conforme necessário */
-    border-radius: 5px; /* Adiciona bordas arredondadas (opcional) */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
 }
-
 
 /* Estilo para o título do formulário */
 form h2 {
@@ -257,4 +253,81 @@ form input[type="submit"]:hover {
     color: red;
     font-size: 14px;
     margin-top: 5px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajustes no cabeçalho */
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 0;
+    }
+
+    .hero {
+        padding: 300px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .features {
+        flex-direction: column;
+        padding: 50px 20px;
+        margin: 20px 0;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+/* Responsividade para telas muito pequenas (ex: celulares antigos) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .feature, .testimonial-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
