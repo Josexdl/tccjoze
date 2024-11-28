@@ -139,7 +139,7 @@ main {
 
 .download-btn {
     display: inline-block;
-    background-color: #00a9e0;
+    background-color: #141414;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -150,11 +150,11 @@ main {
 }
 
 .download-btn:hover {
-    background-color: #007b8a;
+    background-color: #000000;
 }
 
 footer {
-    background-color: #101820;
+    background-color: #0f0f0f;
     color: white;
     padding: 10px 0;
     text-align: center;

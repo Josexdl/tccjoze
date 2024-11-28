@@ -1,4 +1,4 @@
-/* Fonte FIFA */
+/* Estilo FIFA */
 body {
     font-family: 'Anton', sans-serif;
     background-color: #f5f5f5;
@@ -40,24 +40,29 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
+nav ul li a:hover {
+    color: #ff6600; /* Efeito hover */
+}
+
 /* Seção Hero */
 .hero {
-    background-image: url('https://i.postimg.cc/PrWxwbfm/Free-fifa-wallpaper-messi-1920x1080.jpg'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Faz a imagem cobrir toda a área */
-    background-position: center center; /* Centraliza a imagem */
+    background-image: url('https://i.postimg.cc/13pK62dy/wp10059625.webp'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center center;
     color: white;
     padding: 90px 200px;
     text-align: center;
 }
 
-
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto */
 }
 
 .hero p {
     font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Seção de Jogadores */
@@ -83,11 +88,12 @@ nav ul li a {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .player-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
 }
 
 .player-card img {
@@ -129,10 +135,12 @@ nav ul li a {
 .news-item h3 {
     font-size: 1.6rem;
     margin-bottom: 10px;
+    color: #0066cc;
 }
 
 .news-item p {
     font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 /* Footer */
@@ -151,6 +159,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+    color: #ff6600; /* Cor ao passar o mouse */
 }
 
 /* Responsividade */
@@ -180,39 +189,22 @@ footer a:hover {
 
 /* Estilo para o botão iniciar */
 .btn-iniciar {
-    background-color: #0066cc; /* Cor inicial do botão */
+    background-color: #0066cc;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
     padding: 10px 20px;
     border-radius: 5px;
     display: inline-block;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
-}
-
-/* Ajustes no posicionamento do botão iniciar */
-nav {
-    position: relative;
-}
-
-.btn-iniciar {
+    transition: background-color 0.3s ease, transform 0.3s ease;
     position: absolute;
     top: -50px;
     right: 20px;
-    background-color: #0066cc; /* Cor inicial do botão */
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
 }
 
-/* Efeito quando o mouse passar por cima */
 .btn-iniciar:hover {
-    background-color: #ff6600; /* Nova cor do botão ao passar o mouse */
-    transform: scale(1.1); /* Efeito de aumentar um pouco o botão */
+    background-color: #ff6600;
+    transform: scale(1.1);
 }
 
 /* Seção Detalhes sobre o FIFA */
@@ -226,7 +218,8 @@ nav {
 .fifa-details-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #0066cc; /* Cor do título */
+    color: #0066cc;
+    text-transform: uppercase;
 }
 
 .fifa-details-section p {
@@ -237,8 +230,4 @@ nav {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-}
-
-.fifa-details-section p:last-child {
-    margin-bottom: 0; /* Remove a margem do último parágrafo */
 }
